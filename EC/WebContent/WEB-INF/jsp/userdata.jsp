@@ -66,9 +66,9 @@
 										<c:forEach var="BuyDataBeans" items="${buyDataBeansList}" >
 											<tr>
 																									<!-- ↓ここの受け取り？ -->
-												<td class="center"><a href="UserBuyHistoryDetail?buy_id=${BuyDataBeans.buy_id}" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
+												<td class="center"><a href="UserBuyHistoryDetail?id=${BuyDataBeans.id}" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
 												<td class="center">${BuyDataBeans.buyDate}</td>
-												<td class="center">${BuyDataBeans.delivertMethodId}</td>
+												<td class="center">${BuyDataBeans.deliveryMethodName}</td>
 												<td class="center">${BuyDataBeans.totalPrice}円</td>
 											</tr>
 										</c:forEach>
