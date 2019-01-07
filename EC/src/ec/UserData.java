@@ -45,7 +45,7 @@ public class UserData extends HttpServlet {
 			request.setAttribute("udb", udb);
 
 
-			
+
 			/**こっから書き加え**/
 			/**作ったDAO(userIdからデータベースの情報を引っこ抜いてくるDAO)から生成したリストをセット**/
 			BuyDAO buyDao = new BuyDAO();

@@ -66,7 +66,7 @@
 
 										<c:forEach var="BuyDataBeans" items="${buyDataBeansList}" >
 											<tr>
-																									<!-- ↓ここの受け取り？ -->
+																									<!-- urlにくっつけて遷移先でゲットパラメータ -->
 												<td class="center"><a href="UserBuyHistoryDetail?id=${BuyDataBeans.id}" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
 												<td class="center">		<fmt:formatDate value="${BuyDataBeans.buyDate}" pattern="yyyy年MM月dd日 KK時mm分" /></td>
 												<td class="center">${BuyDataBeans.deliveryMethodName}</td>

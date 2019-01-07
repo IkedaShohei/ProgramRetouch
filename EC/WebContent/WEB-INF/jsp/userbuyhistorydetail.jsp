@@ -33,7 +33,7 @@
 								<tr>
 									<td class="center"><fmt:formatDate value="${buyDataBeans.buyDate}" pattern="yyyy年MM月dd日 KK時mm分" /></td>
 									<td class="center">${buyDataBeans.deliveryMethodName}</td>
-									<td class="center">${buyDataBeans.totalPrice + buyDataBeans.deliveryMethodPrice}円</td>
+									<td class="center">${buyDataBeans.totalPrice}円</td>
 								</tr>
 							</tbody>
 						</table>
