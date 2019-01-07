@@ -1,5 +1,6 @@
 <%@	page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +31,7 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td class="center">${buyDataBeans.buyDate}</td>
+									<td class="center"><fmt:formatDate value="${buyDataBeans.buyDate}" pattern="yyyy年MM月dd日 KK時mm分" /></td>
 									<td class="center">${buyDataBeans.deliveryMethodName}</td>
 									<td class="center">${buyDataBeans.totalPrice}円</td>
 								</tr>

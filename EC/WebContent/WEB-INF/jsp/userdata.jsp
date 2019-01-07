@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,7 +68,7 @@
 											<tr>
 																									<!-- ↓ここの受け取り？ -->
 												<td class="center"><a href="UserBuyHistoryDetail?id=${BuyDataBeans.id}" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
-												<td class="center">${BuyDataBeans.buyDate}</td>
+												<td class="center">		<fmt:formatDate value="${BuyDataBeans.buyDate}" pattern="yyyy年MM月dd日 KK時mm分" /></td>
 												<td class="center">${BuyDataBeans.deliveryMethodName}</td>
 												<td class="center">${BuyDataBeans.totalPrice}円</td>
 											</tr>
